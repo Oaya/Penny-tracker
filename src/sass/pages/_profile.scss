@@ -1,0 +1,68 @@
+.profile {
+  padding: 3rem 3rem;
+
+  @include respond(tab-port) {
+    padding: 5rem 3rem;
+  }
+
+  &__user-box {
+    width: 25%;
+    text-align: center;
+    vertical-align: top;
+    background-color: $color-blue-light-3;
+    border-radius: 10px;
+    padding: 3rem 0rem;
+    display: inline-block;
+    box-shadow: $default-box-shadow;
+
+    @include respond(tab-port) {
+      width: 90%;
+      display: block;
+      padding: 1rem 0;
+      margin: 5rem auto;
+    }
+  }
+
+  &__heading {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    letter-spacing: 1.2px;
+
+    @include respond(tab-port) {
+      margin-bottom: 0;
+      padding: 1rem 0;
+    }
+  }
+
+  &__content {
+    margin: 1.5rem 0 1rem;
+    font-size: 2rem;
+
+    @include respond(tab-port) {
+      display: inline-block;
+      margin: 1rem 2rem;
+      padding: 1rem 0;
+      font-size: 1.8rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.bar-chart {
+  background-color: $color-white;
+  display: inline-block;
+  margin-left: 3rem;
+  width: 70%;
+
+  @include respond(tab-port) {
+    display: block;
+    width: 90%;
+
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+}

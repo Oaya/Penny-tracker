@@ -1,0 +1,17 @@
+.error {
+  width: 100%;
+  margin-bottom: 1rem;
+
+  border-radius: 3px;
+
+  &__text {
+    font-size: 1.8rem;
+    color: rgb(97, 26, 21);
+    background-color: rgb(253, 236, 234);
+    display: flex;
+    padding: 1.5rem;
+    line-height: 1.43;
+    border-radius: 4px;
+    padding-left: 0.5rem;
+  }
+}

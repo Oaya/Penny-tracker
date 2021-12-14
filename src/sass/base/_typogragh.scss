@@ -1,0 +1,43 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  color: $color-purple-dark;
+  line-height: 1.5;
+}
+.heading-primary {
+  text-transform: uppercase;
+  text-align: center;
+
+  &--main {
+    display: block;
+    font-size: 6.5rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    animation: moveInTop 0.8s ease-out;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 3.2rem;
+    font-weight: 300;
+    animation: glow 2s infinite alternate;
+  }
+}
+
+.heading-secondary {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    $color-blue-dark-1,
+    $color-purple-dark-2
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.paragraph {
+  font-size: 1.7rem;
+}

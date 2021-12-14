@@ -1,0 +1,33 @@
+.table {
+  width: 100%;
+  margin-top: 2rem;
+
+  &__head {
+    background-color: $color-blue-dark-2;
+
+    &-cell {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: $color-purple-dark;
+      text-align: center;
+    }
+  }
+  &__body {
+    background-color: $color-white;
+
+    &-cell {
+      font-size: 1.7rem;
+      text-align: center;
+      padding: 0.4rem;
+    }
+  }
+  &__icon {
+    vertical-align: middle;
+    transition: all, 0.2s;
+
+    &:hover {
+      transform: scale(1.2);
+      color: $color-blue-dark-3;
+    }
+  }
+}

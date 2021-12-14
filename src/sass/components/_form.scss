@@ -1,0 +1,77 @@
+.form {
+  &-container {
+    @include absCenter;
+
+    background-color: $color-white;
+    width: 55%;
+    border-radius: 5px;
+    padding: 2rem 4rem;
+    margin-top: 3rem;
+    box-shadow: $default-box-shadow;
+
+    @include respond(phone) {
+      width: 80%;
+    }
+  }
+
+  &__group {
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    width: 100%;
+
+    border-radius: 5px;
+    border: none;
+
+    &-auth {
+      background: rgb(238, 247, 255);
+      display: block;
+      padding: 1.5rem 2rem;
+      font-size: 1.5rem;
+    }
+
+    &-cost {
+      margin-bottom: 1rem;
+      padding: 0.7rem 1rem;
+
+      @include respond(tab-land) {
+        font-size: 1rem;
+      }
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid $color-blue-dark-1;
+    }
+  }
+
+  &__label {
+    font-family: inherit;
+    font-size: 1.5rem;
+  }
+
+  &__link-box {
+    font-size: 1.8rem;
+  }
+
+  &__link-login,
+  &__link-password {
+    text-decoration: none;
+    color: $color-purple-dark;
+    transition: all, 0.2s;
+    display: inline-block;
+
+    &:hover {
+      color: #aa14f0;
+      transform: scale(1.1);
+    }
+  }
+  &__link-password {
+    float: right;
+  }
+}
+
+.cost-form {
+  margin-top: 1rem;
+}

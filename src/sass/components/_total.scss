@@ -1,0 +1,53 @@
+.total {
+  @include clearfix;
+  padding: 2rem 3.5rem;
+  background-color: $color-white;
+  width: 62%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2rem;
+  box-shadow: $default-box-shadow;
+  margin: 0 auto;
+
+  @include respond(tab-port) {
+    width: 80%;
+    padding: 1rem 0;
+    margin: 0 auto;
+  }
+
+  &__box {
+    &-side {
+      padding-top: 4rem;
+      font-size: 1.9rem;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    &-center {
+      display: inline-block;
+      margin: 0 3rem;
+    }
+  }
+  &__heading-main {
+    font-size: 3rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+
+    @include respond(tab-port) {
+      font-size: 2.5rem;
+    }
+  }
+  &__heading-sub {
+    font-weight: 400;
+
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
+  }
+
+  &__box-side:hover &__icon,
+  &__box-side:hover &__text {
+    color: $color-blue-dark-3;
+    transform: scale(1.2);
+  }
+}

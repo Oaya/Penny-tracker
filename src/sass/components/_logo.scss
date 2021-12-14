@@ -1,0 +1,23 @@
+.logo {
+  &-box {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+  }
+
+  &__img {
+    height: 6rem;
+  }
+
+  &__text {
+    background-image: linear-gradient(to bottom, #14ffec, #0090f0c5);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    float: right;
+    margin-top: 2rem;
+    margin-left: 0.3rem;
+    font-weight: 500;
+  }
+}

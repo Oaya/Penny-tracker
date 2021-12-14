@@ -1,0 +1,59 @@
+//place the element in the center//
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//protect filling the spaces by child elements made by float//
+@mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+//MEDIA QUERT MANAGER//
+
+/* 
+   0 - 600x phone
+   600 - 900px Tablet portrait
+   900 - 1200px Tablet landscape
+   1200 - 1800px is nomal style apply
+   1800px - Big desktop
+  
+  $breakpoint argument choices:
+  - phone
+  - tab-port
+  - tab-land
+  -big-desk
+  1em = 16px
+  */
+
+//declear the breakpoint by the devices size//
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 600px) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 900px) {
+      @content;
+    } //900px
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 1200px) {
+      @content;
+    } //1200px
+  }
+
+  @if $breakpoint == big-desk {
+    @media (min-width: 1800px) {
+      @content;
+    } //1800px
+  }
+}
