@@ -1,24 +1,15 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { Redirect, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 import { useAuth } from "../../contexts/AuthContext";
+import Login from "./Login";
 
-const PrivateRoute = ({ comp: Component, ...rest }) => {
+const PrivateRoute = ({ component, ...rest }) => {
   const { currentUser } = useAuth();
 
-  return (
-    <Route
-      {...rest}
-      render={(props) => {
-        return currentUser ? (
-          <Component {...props} />
-        ) : (
-          <Redirect to="/welcome" />
-        );
-      }}
-    />
-  );
+  const renderingComponent = currentUser ? component : Login;
+  return <Route {...rest} component={renderingComponent} />;
 };
 
 export default PrivateRoute;

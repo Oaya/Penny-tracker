@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
 
 import "./sass/main.scss";
 import Profile from "./pages/Profile";
@@ -12,24 +12,16 @@ import ResetPassword from "./pages/ResetPassword";
 
 const App = () => {
   return (
-    <Switch>
-      <PrivateRoute path="/" exact comp={Home}></PrivateRoute>
-      <Route path="/welcome">
-        <Welcome />
-      </Route>
-      <Route path="/login">
-        <LogIn />
-      </Route>
-      <Route path="/signUp">
-        <SignUp />
-      </Route>
-      <Route path="/ResetPassword">
-        <ResetPassword />
-      </Route>
-      <Route path="/Profile">
-        <Profile />
-      </Route>
-    </Switch>
+    <BrowserRouter>
+      <Switch>
+        <PrivateRoute path="/" exact component={Home} />
+        <Route path="/welcome" component={Welcome} />
+        <Route path="/login" component={LogIn} />
+        <Route path="/signUp" component={SignUp} />
+        <Route path="/ResetPassword" component={ResetPassword} />
+        <Route path="/Profile" component={Profile} />
+      </Switch>
+    </BrowserRouter>
   );
 };
 export default App;

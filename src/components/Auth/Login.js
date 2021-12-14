@@ -19,6 +19,7 @@ const Login = () => {
     try {
       setError(null);
       await login(enteredEmail, enteredPassword);
+
       history.push("/");
     } catch (res) {
       setError(res.message);
