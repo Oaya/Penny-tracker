@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { useHistory } from "react-router";
+import { NavLink, useHistory } from "react-router-dom";
 
 import { useAuth } from "../contexts/AuthContext";
 import Error from "./Error";
