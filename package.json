@@ -2,7 +2,7 @@
   "name": "penny--traker",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Oaya.github.io/pennytraker",
+  "homepage": "https://penny-traker.herokuapp.com/",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
@@ -27,6 +27,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "heroku-postbuild": "npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "scss": "node-sass --watch src/sass -o css",
