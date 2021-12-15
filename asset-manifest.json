@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/pennytraker/static/css/main.27013316.chunk.css",
-    "main.js": "/pennytraker/static/js/main.a35f8919.chunk.js",
-    "main.js.map": "/pennytraker/static/js/main.a35f8919.chunk.js.map",
+    "main.js": "/pennytraker/static/js/main.4c191426.chunk.js",
+    "main.js.map": "/pennytraker/static/js/main.4c191426.chunk.js.map",
     "runtime-main.js": "/pennytraker/static/js/runtime-main.a374cf50.js",
     "runtime-main.js.map": "/pennytraker/static/js/runtime-main.a374cf50.js.map",
-    "static/js/2.2baa4698.chunk.js": "/pennytraker/static/js/2.2baa4698.chunk.js",
-    "static/js/2.2baa4698.chunk.js.map": "/pennytraker/static/js/2.2baa4698.chunk.js.map",
+    "static/js/2.12638bdb.chunk.js": "/pennytraker/static/js/2.12638bdb.chunk.js",
+    "static/js/2.12638bdb.chunk.js.map": "/pennytraker/static/js/2.12638bdb.chunk.js.map",
     "index.html": "/pennytraker/index.html",
     "static/css/main.27013316.chunk.css.map": "/pennytraker/static/css/main.27013316.chunk.css.map",
-    "static/js/2.2baa4698.chunk.js.LICENSE.txt": "/pennytraker/static/js/2.2baa4698.chunk.js.LICENSE.txt",
+    "static/js/2.12638bdb.chunk.js.LICENSE.txt": "/pennytraker/static/js/2.12638bdb.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/pennytraker/static/media/coin.c171ea9a.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.a374cf50.js",
-    "static/js/2.2baa4698.chunk.js",
+    "static/js/2.12638bdb.chunk.js",
     "static/css/main.27013316.chunk.css",
-    "static/js/main.a35f8919.chunk.js"
+    "static/js/main.4c191426.chunk.js"
   ]
 }
