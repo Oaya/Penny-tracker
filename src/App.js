@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch, BrowserRouter } from "react-router-dom";
+import { Route, Switch, HashRouter } from "react-router-dom";
 
 import "./sass/main.scss";
 import Profile from "./pages/Profile";
@@ -12,7 +12,7 @@ import ResetPassword from "./pages/ResetPassword";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         <PrivateRoute path="/" exact component={Home} />
         <Route path="/welcome" component={Welcome} />
@@ -21,7 +21,7 @@ const App = () => {
         <Route path="/ResetPassword" component={ResetPassword} />
         <Route path="/Profile" component={Profile} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 export default App;
