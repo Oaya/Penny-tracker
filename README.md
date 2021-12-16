@@ -1,4 +1,4 @@
-# Penny-Traker
+# Penny-traker
 
 This budget app track your living expenses and incomes
 
