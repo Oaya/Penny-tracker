@@ -1,10 +1,10 @@
-# Penny-traker
+# Penny-tracker
 
 This budget app track your living expenses and incomes
 
 ## Features
 
-- Sign up with username, email, and password and log in with your eamil adress and password.
+- Sign up with username, email, and password and log in with your email address and password.
 - Add or delete incomes and expenses in user's Main page. It shows monthly total and also user can see the each contents in the tables.
 - Pie chart shows total cost of each categories for the month.
 - Profile page shows whole total income, expense, and balance for the user started to use this App.
@@ -29,13 +29,14 @@ Profile page shows your whole incomes, expenses and monthly incomes and expenses
 <img width="1280" src="https://user-images.githubusercontent.com/74119671/122479876-a7a05c00-cf80-11eb-94f4-427a67e19693.png">
 
 ## Requirements
-
+Node version v12
 - firebase
 - react
 - react-chartjs-2
 - uuid
 - date-fns
 - node-sass
+
 
 ## Installation
 
