@@ -21,6 +21,16 @@ const PieChart = ({
       },
     ],
   };
+  const options = {
+    plugins: {
+      legend: {
+      
+        labels: {
+          usePointStyle: true
+        }
+      }
+    }
+  };
 
   useEffect(() => {
     const category = () => {
@@ -37,7 +47,7 @@ const PieChart = ({
     setPieChartsData(category);
   }, [pieChartData]);
 
-  return <Pie data={pieChart} categories={categories} />;
+  return <Pie data={pieChart} categories={categories}  options={options}/>;
 };
 export default PieChart;
 

@@ -14,7 +14,6 @@ const Expense = () => {
     "Insurance",
     "Socializing",
     "Shopping",
-    "Entertainment",
     "Transportation",
     "Other",
   ];
@@ -23,13 +22,12 @@ const Expense = () => {
     "#28b5b5",
     "#b0efeb",
     "#8fd9a8",
-    "#34656d",
     "#81b214",
     "#00917c",
     "#75cfb8",
     "#11698e",
   ];
-  const initialData = [0, 0, 0, 0, 0, 0, 0, 0];
+  const initialData = [0, 0, 0, 0, 0, 0, 0];
   return (
     <div className="card">
       <div className="card__heading-group">
