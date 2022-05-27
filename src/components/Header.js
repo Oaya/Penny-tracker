@@ -9,7 +9,7 @@ const Header = () => {
   const { currentUser } = useAuth();
   const [error, setError] = useState(null);
   const history = useHistory();
-  const { logout } = useAuth();
+  const { logout ,showProfile, setShowProfile} = useAuth();
 
   async function handleLogout() {
     setError(false);
@@ -28,7 +28,7 @@ const Header = () => {
       <div className="header__navigation">
         {error && <Error message={error} />}
 
-        {currentUser && (
+        {currentUser && showProfile &&(
           <NavLink className="btn--nav" to="/Profile">
             Profile
           </NavLink>

@@ -7,7 +7,8 @@ import Total from "../components/Total";
 import Header from "../components/Header";
 
 const Home = () => {
-  const { username } = useAuth();
+  const { username,setShowProfile } = useAuth();
+  setShowProfile(true);
 
   return (
     <div>

@@ -12,6 +12,7 @@ function useAuth() {
 const AuthContextProvider = (props) => {
   const [currentUser, setCurrentUser] = useState(null);
   const [username, setUserName] = useState("Guest");
+  const [showProfile, setShowProfile] = useState(true);
 
   function getUserName(username) {
     setUserName(username);
@@ -57,6 +58,8 @@ const AuthContextProvider = (props) => {
     login,
     logout,
     resetPassword,
+    showProfile,
+    setShowProfile
   };
   return (
     <AuthContext.Provider value={authValue}>

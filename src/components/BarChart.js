@@ -4,8 +4,10 @@ import { Bar } from "react-chartjs-2";
 
 import { useExpense } from "../contexts/ExpenseContext";
 import { useIncome } from "../contexts/IncomeContext";
+import {useAuth} from '../contexts/AuthContext';
 
 const BarChart = () => {
+  
   const [expensebarChart, setExpenseBarChart] = useState([
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   ]);
@@ -14,6 +16,9 @@ const BarChart = () => {
   ]);
   const { barIsLoading: isLoadingIncome, allIncomes } = useIncome();
   const { barIsLoading: isLoadingExpense, allExpenses } = useExpense();
+  const {setShowProfile} = useAuth();
+  setShowProfile(false);
+  
   const monthLabels = [
     "01",
     "02",

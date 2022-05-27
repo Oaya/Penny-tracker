@@ -24,6 +24,8 @@ const ExpenseContextProvider = (props) => {
   const [isLoading, setIsLoading] = useState(false);
   const [barIsLoading, setBarisLoading] = useState(false);
   const [error, setError] = useState(null);
+
+
   const {
     firstDayOfMonth,
     theLastDayOfMonth,
