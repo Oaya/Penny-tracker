@@ -1,8 +1,8 @@
 {
-  "name": "penny--traker",
+  "name": "penny--tracker",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://Oaya.github.io/pennytraker",
+  "homepage": "https://Oaya.github.io/Penny-tracker",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
